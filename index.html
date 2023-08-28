@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Purple Calculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <input id="inputField" type="text" readonly>
+    <input id="resultField" type="text" readonly>
+  
+    <div class="row">
+      <button class="number" onclick="appendToInput('1')">1</button>
+      <button class="number" onclick="appendToInput('2')">2</button>
+      <button class="number" onclick="appendToInput('3')">3</button>
+      <button class="number" onclick="appendToInput('4')">4</button>
+      <button class="number" onclick="appendToInput('5')">5</button>
+      <button class="number" onclick="appendToInput('6')">6</button>
+      <button class="number" onclick="appendToInput('7')">7</button>
+      <button class="number" onclick="appendToInput('8')">8</button>
+      <button class="number" onclick="appendToInput('9')">9</button>
+      <button class="number" onclick="appendToInput('0')">0</button>
+      
+      
+      <button class="operation" onclick="appendToInput('+')">+</button>
+      <button class="operation" onclick="appendToInput('-')">-</button>
+      <button class="operation" onclick="appendToInput('*')">*</button>
+      <button class="operation" onclick="appendToInput('/')">/</button>
+      <button class="operation" onclick="appendToInput('%')">%</button>
+    </div>
+    
+    <div class="row">
+      <button class="clear" onclick="clearFields()">Clear</button>
+      <button class="calculate" onclick="calculateResult()">Calculate</button>
+    </div>
+  </div>
+  
+ 
+</body>
+</html>
